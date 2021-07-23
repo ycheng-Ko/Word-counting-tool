@@ -5,7 +5,7 @@ import datetime
 """Define Functions"""
 def readfile(fname):
     f = open(fname, "r")
-    f.lstrip
+    # f.lstrip
 
     return 
 

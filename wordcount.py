@@ -42,10 +42,10 @@ for i in range( len(para_list) ):
         
 output.add_paragraph(f"\n({total_num} words)")
 
-if sys.argv[2] != None:
+if len(sys.argv) == 3:
     if sys.argv[2] == "-i":
         output.save("iss" + today + ".docx")
     elif sys.argv[2] == "-a":
         output.save("arg" + today + ".docx")
 else:
-    output(today + ".docx")
+    output.save(today + ".docx")
